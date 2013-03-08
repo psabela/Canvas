@@ -34,11 +34,11 @@ window.requestAnimFrame = (function(){
 				};
  })();	
 
-window.cancelAnimationFrame = (function () {
+window.cancelAnimFrame = (function () {
 		return 	window.cancelRequestAnimationFrame ||
 				window.webkitCancelAnimationFrame || window.webkitCancelRequestAnimationFrame ||
 				window.mozCancelAnimationFrame || window.mozCancelRequestAnimationFrame ||
 				window.msCancelAnimationFrame || window.msCancelRequestAnimationFrame ||
 				window.oCancelAnimationFrame || window.oCancelRequestAnimationFrame ||
-				window.clearTimeout);
+				window.clearTimeout;
 })();
