@@ -11,8 +11,8 @@ Grid.prototype.draw = function(ctx)
 		ctx.save();
 		ctx.scale(this.scaleX,this.scaleY);
 		//DRAW RECTANGLE
-		ctx.fillStyle = "Red";
-		ctx.fillRect(60,60,this.gridSpacing*5,this.gridSpacing*5);
+		//ctx.fillStyle = "Red";
+		//ctx.fillRect(60,60,this.gridSpacing*5,this.gridSpacing*5);
 
 		//set style of the grid
 		ctx.strokeStyle = "Black";
@@ -46,5 +46,5 @@ Grid.prototype.draw = function(ctx)
 		ctx.arc(0,0,5,0,Math.PI*2,false);
 		ctx.stroke();
 		ctx.fill();
-		ctx.restore();
+		//ctx.restore();
 	}
