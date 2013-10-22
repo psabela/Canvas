@@ -47,4 +47,5 @@ Grid.prototype.draw = function(ctx)
 		ctx.stroke();
 		ctx.fill();
 		//ctx.restore();
+		return ctx;
 	}
